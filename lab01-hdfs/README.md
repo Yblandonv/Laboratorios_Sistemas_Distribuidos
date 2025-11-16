@@ -66,9 +66,9 @@ Esto por la parte de la terminas con SSH, ahora desde HUE siguiendo los pasos te
 
 4.	Subir archivos 
 
-![alt text](image-15.png)
+![alt text](image-17.png)
 
 
 5.	Ver contenido
 
-![alt text](image-16.png)
+![alt text](image-18.png)
