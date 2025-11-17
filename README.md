@@ -26,7 +26,7 @@ Toda la documentación completa, explicaciones, instrucciones paso a paso y evid
 
 https://github.com/Yblandonv/Laboratorios_Sistemas_Distribuidos/wiki
 
-### NOTA:
+### IMPORTANTE:
 
 En la wiki del proyecto se encuentra una explicación para cada laboratorio.
 
@@ -51,4 +51,5 @@ En la wiki del proyecto se encuentra una explicación para cada laboratorio.
 ## Autor
 
 Yasir Enrique Blandon Varela
+
 Estudiante Ingeniería de Sistemas – Universidad EAFIT
