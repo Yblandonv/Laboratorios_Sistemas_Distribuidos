@@ -1,0 +1,410 @@
+﻿{
+  "paragraphs": [
+    {
+      "text": "%pyspark\ndf=spark.read.csv('hdfs:///user/hadoop/datasets/onu/hdi/',inferSchema=True,header=True)",
+      "user": "anonymous",
+      "dateUpdated": "2025-11-16T18:25:55+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://ip-172-31-46-48.ec2.internal:4040/jobs/job?id=0",
+              "$$hashKey": "object:1077"
+            },
+            {
+              "jobUrl": "http://ip-172-31-46-48.ec2.internal:4040/jobs/job?id=1",
+              "$$hashKey": "object:1078"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1763317286522_811961858",
+      "id": "20210602-162609_236195196",
+      "dateCreated": "2025-11-16T18:21:26+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:226",
+      "dateFinished": "2025-11-16T18:26:08+0000",
+      "dateStarted": "2025-11-16T18:25:55+0000"
+    },
+    {
+      "text": "%pyspark\ndf.show(10)",
+      "user": "anonymous",
+      "dateUpdated": "2025-11-16T18:26:27+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+---+-------------+-----+------+--------+--------+-----+----+------------------------------+\n| id|      country|  hdi|lifeex|myschool|eyschool|  gni|gni2|nihdi                         |\n+---+-------------+-----+------+--------+--------+-----+----+------------------------------+\n|  1|       Norway|0.943|  81.1|    12.6|    17.3|47557|   6|                         0.975|\n|  2|    Australia|0.929|  81.9|    12.0|    18.0|34431|  16|                         0.979|\n|  3|  Netherlands| 0.91|  80.7|    11.6|    16.8|36402|   9|                         0.944|\n|  4|United States| 0.91|  78.5|    12.4|    16.0|43017|   6|                         0.931|\n|  5|  New Zealand|0.908|  80.7|    12.5|    18.0|23737|  30|                         0.978|\n|  6|       Canada|0.908|  81.0|    12.1|    16.0|35166|  10|                         0.944|\n|  7|      Ireland|0.908|  80.6|    11.6|    18.0|29322|  19|                         0.959|\n|  8|Liechtenstein|0.905|  79.6|    10.3|    14.7|83717|  -6|                         0.877|\n|  9|      Germany|0.905|  80.4|    12.2|    15.9|34854|   8|                          0.94|\n| 10|       Sweden|0.904|  81.4|    11.7|    15.7|35837|   4|                         0.936|\n+---+-------------+-----+------+--------+--------+-----+----+------------------------------+\nonly showing top 10 rows\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://ip-172-31-46-48.ec2.internal:4040/jobs/job?id=2",
+              "$$hashKey": "object:1145"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1763317286523_29317493",
+      "id": "20210602-162648_552216616",
+      "dateCreated": "2025-11-16T18:21:26+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:227",
+      "dateFinished": "2025-11-16T18:26:27+0000",
+      "dateStarted": "2025-11-16T18:26:27+0000"
+    },
+    {
+      "text": "%pyspark\ndf.createOrReplaceTempView(\"hdi\")",
+      "user": "anonymous",
+      "dateUpdated": "2025-11-16T18:26:45+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1763317286524_533122224",
+      "id": "20210602-162701_1466795703",
+      "dateCreated": "2025-11-16T18:21:26+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:228",
+      "dateFinished": "2025-11-16T18:26:45+0000",
+      "dateStarted": "2025-11-16T18:26:45+0000"
+    },
+    {
+      "text": "%pyspark\ndfsql = spark.sql(\"select country, lifeex from hdi where lifeex > 80\")",
+      "user": "anonymous",
+      "dateUpdated": "2025-11-16T18:26:51+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1763317286524_2019346077",
+      "id": "20210602-162717_265176044",
+      "dateCreated": "2025-11-16T18:21:26+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:229",
+      "dateFinished": "2025-11-16T18:26:51+0000",
+      "dateStarted": "2025-11-16T18:26:51+0000"
+    },
+    {
+      "text": "%pyspark\ndfsql.show()",
+      "user": "anonymous",
+      "dateUpdated": "2025-11-16T18:26:56+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "python",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/python",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+--------------------+------+\n|             country|lifeex|\n+--------------------+------+\n|              Norway|  81.1|\n|           Australia|  81.9|\n|         Netherlands|  80.7|\n|         New Zealand|  80.7|\n|              Canada|  81.0|\n|             Ireland|  80.6|\n|             Germany|  80.4|\n|              Sweden|  81.4|\n|         Switzerland|  82.3|\n|               Japan|  83.4|\n|Hong Kong China (...|  82.8|\n|             Iceland|  81.8|\n| Korea (Republic of)|  80.6|\n|              Israel|  81.6|\n|             Austria|  80.9|\n|              France|  81.5|\n|               Spain|  81.4|\n|               Italy|  81.9|\n|           Singapore|  81.1|\n|      United Kingdom|  80.2|\n+--------------------+------+\nonly showing top 20 rows\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://ip-172-31-46-48.ec2.internal:4040/jobs/job?id=3",
+              "$$hashKey": "object:1205"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1763317286524_1442340251",
+      "id": "20210602-162734_1831798159",
+      "dateCreated": "2025-11-16T18:21:26+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:230",
+      "dateFinished": "2025-11-16T18:26:57+0000",
+      "dateStarted": "2025-11-16T18:26:56+0000"
+    },
+    {
+      "text": "%sql\nselect country, lifeex from hdi where lifeex > 80",
+      "user": "anonymous",
+      "dateUpdated": "2025-11-16T18:27:05+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "multiBarChart",
+              "height": 300,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "country": "string",
+                      "lifeex": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                },
+                "multiBarChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "stackedAreaChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                },
+                "lineChart": {
+                  "rotate": {
+                    "degree": "-45"
+                  },
+                  "xLabelStatus": "default"
+                }
+              },
+              "commonSetting": {},
+              "keys": [
+                {
+                  "name": "country",
+                  "index": 0,
+                  "aggr": "sum"
+                }
+              ],
+              "groups": [],
+              "values": [
+                {
+                  "name": "lifeex",
+                  "index": 1,
+                  "aggr": "sum"
+                }
+              ]
+            },
+            "helium": {}
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "country\tlifeex\nNorway\t81.1\nAustralia\t81.9\nNetherlands\t80.7\nNew Zealand\t80.7\nCanada\t81.0\nIreland\t80.6\nGermany\t80.4\nSweden\t81.4\nSwitzerland\t82.3\nJapan\t83.4\nHong Kong China (SAR)\t82.8\nIceland\t81.8\nKorea (Republic of)\t80.6\nIsrael\t81.6\nAustria\t80.9\nFrance\t81.5\nSpain\t81.4\nItaly\t81.9\nSingapore\t81.1\nUnited Kingdom\t80.2\nAndorra\t80.9\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://ip-172-31-46-48.ec2.internal:4040/jobs/job?id=4",
+              "$$hashKey": "object:1344"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1763317286524_1915762588",
+      "id": "20210602-162745_1460593440",
+      "dateCreated": "2025-11-16T18:21:26+0000",
+      "status": "FINISHED",
+      "$$hashKey": "object:231",
+      "dateFinished": "2025-11-16T18:27:06+0000",
+      "dateStarted": "2025-11-16T18:27:05+0000"
+    },
+    {
+      "text": "%sql\n",
+      "user": "anonymous",
+      "dateUpdated": "2025-11-16T18:21:26+0000",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/sql",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1763317286524_1578989869",
+      "id": "20210602-162815_636935543",
+      "dateCreated": "2025-11-16T18:21:26+0000",
+      "status": "READY",
+      "$$hashKey": "object:232"
+    }
+  ],
+  "name": "sparksql-onu-zeppelin",
+  "id": "2MBH1R838",
+  "defaultInterpreterGroup": "spark",
+  "version": "0.11.1",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {},
+  "config": {
+    "isZeppelinNotebookCronEnable": false,
+    "looknfeel": "default",
+    "personalizedMode": "false"
+  },
+  "info": {},
+  "path": "/sparksql-onu-zeppelin"
+}
